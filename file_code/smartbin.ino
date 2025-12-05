@@ -4,7 +4,7 @@
 #include <ESP32Servo.h>
 
 // ===== WIFI =====
-const char* WIFI_SSID = "tên wìi";      // <-- SỬA
+const char* WIFI_SSID = "tên wifi";      // <-- SỬA
 const char* WIFI_PASS = "pass wifi";  // <-- SỬA
 
 // ===== SERVER (IP laptop chạy Python) =====
