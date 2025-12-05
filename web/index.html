@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Trash Classification - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🗑️ Smart Trash Classification AI</h1>
+            <p>Hệ thống phân loại rác thông minh sử dụng AI</p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Statistics Cards -->
+            <section class="stats-section">
+                <div class="stat-card recycle">
+                    <div class="stat-icon">♻️</div>
+                    <div class="stat-info">
+                        <h3>RECYCLE</h3>
+                        <div class="stat-value" id="recycleCount">0</div>
+                        <div class="stat-percentage" id="recyclePercent">0%</div>
+                    </div>
+                </div>
+                <div class="stat-card organic">
+                    <div class="stat-icon">🍃</div>
+                    <div class="stat-info">
+                        <h3>ORGANIC</h3>
+                        <div class="stat-value" id="organicCount">0</div>
+                        <div class="stat-percentage" id="organicPercent">0%</div>
+                    </div>
+                </div>
+                <div class="stat-card other">
+                    <div class="stat-icon">🗑️</div>
+                    <div class="stat-info">
+                        <h3>OTHER</h3>
+                        <div class="stat-value" id="otherCount">0</div>
+                        <div class="stat-percentage" id="otherPercent">0%</div>
+                    </div>
+                </div>
+                <div class="stat-card total">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-info">
+                        <h3>TỔNG CỘNG</h3>
+                        <div class="stat-value" id="totalCount">0</div>
+                        <div class="stat-percentage">100%</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chart Section -->
+            <section class="chart-section">
+                <div class="chart-card card">
+                    <h2>📈 Biểu Đồ Phân Loại Theo Thời Gian</h2>
+                    <canvas id="timeChart"></canvas>
+                </div>
+            </section>
+
+            <!-- History Section -->
+            <section class="history-section card">
+                <div class="history-header">
+                    <h2>📋 Lịch Sử Phân Loại Gần Đây</h2>
+                    <button class="btn btn-small" id="refreshBtn">🔄 Làm Mới</button>
+                </div>
+                <div class="history-list" id="historyList">
+                    <div class="history-empty">Chưa có lịch sử phân loại</div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
