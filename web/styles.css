@@ -51,8 +51,9 @@ body {
     width: auto;
     object-fit: contain;
     background: transparent;
-    mix-blend-mode: multiply;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+    mix-blend-mode: normal; /* Sửa lại để logo không bị ám màu nền */
+    filter: none; /* Ensure the logo retains its original colors */
+    background-color: transparent; /* Remove any background color */
 }
 
 .header-text {
@@ -464,4 +465,3 @@ body {
 .history-list::-webkit-scrollbar-thumb:hover {
     background: var(--text-primary);
 }
-
