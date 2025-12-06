@@ -140,5 +140,5 @@ Dự án này được phát triển cho mục đích giáo dục.
 
 ## Web poster 
 
-https://frogimori.github.io/web_esp32_smart_waste_classification_using_AI_by_dk_hbt_poster_dk/
+https://frogimori.github.io/demo_dk_hbt_steam/
 
